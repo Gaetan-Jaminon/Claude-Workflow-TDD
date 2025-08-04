@@ -3,7 +3,6 @@
 
 # But include workflow-related files
 !README.md
-!CLAUDE.md
 !.claude/
 !.claude/**
 !.gitignore
