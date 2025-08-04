@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(find:*)",
+      "Bash(rm:*)",
+      "Bash(go get:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(git add:*)",
+      "Bash(gh run view:*)",
+      "Bash(gh pr view:*)",
+      "Bash(git checkout:*)",
+      "Bash(cp:*)",
+      "Bash(go mod:*)",
+      "Bash(go build:*)",
+      "Bash(go test:*)",
+      "Bash(chmod:*)",
+      "Bash(gh pr checks:*)",
+      "Bash(go list:*)",
+      "Bash(gh label create:*)",
+      "Bash(gh issue create:*)",
+      "Bash(gh project create:*)",
+      "Bash(git init:*)",
+      "Bash(make test-unit:*)",
+      "Bash(make test:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(systemctl status:*)",
+      "Bash(export PGPASSWORD=postgres)",
+      "Bash(psql:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(gh repo view:*)",
+      "Bash(go run:*)",
+      "Bash(git pull:*)"
+    ],
+    "deny": []
+  }
+}
