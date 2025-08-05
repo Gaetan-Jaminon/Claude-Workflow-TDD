@@ -205,9 +205,10 @@ Result: User authentication feature live in production with comprehensive tests
 ## How to Use This Workflow
 
 ### **Setup**
-1. Copy the `.claude/` directory to your project root
-2. Update `CLAUDE.md` with your project-specific context
-3. Configure Claude Code to use these workflow commands
+1. Clone this repository to your project
+2. Create a `CLAUDE.md` file in your project root with project-specific context
+3. Customize `.claude/commands/` for your tech stack if needed
+4. Configure Claude Code to use these workflow commands
 
 ### **Usage**
 1. Provide a feature request to Claude Code
@@ -217,8 +218,31 @@ Result: User authentication feature live in production with comprehensive tests
 
 ### **Customization**
 - Modify commands in `.claude/commands/` for your specific needs
-- Update testing strategies in `CLAUDE.md` for your tech stack
+- Update testing strategies in your project's `CLAUDE.md` for your tech stack
 - Adjust architecture standards for your project requirements
+
+---
+
+## Repository Contents
+
+```
+.claude/
+├── commands/                    # Workflow command definitions
+│   ├── analyze-pr-feedback.md  # Claude GitHub review integration
+│   ├── commit-and-create-pr.md # Git workflow automation
+│   ├── explore-feature.md      # Research phase
+│   ├── implement-minimal.md    # Minimal implementation
+│   ├── plan-feature.md         # Planning phase
+│   ├── requirements-spec.md    # Requirements definition
+│   ├── scope-check.md          # Overengineering prevention
+│   ├── sync-with-main.md       # Branch synchronization
+│   └── test-first.md           # TDD test-first phase
+├── templates/                   # Reusable templates
+├── settings.local.json         # Example Claude Code settings
+├── COMPLETE_WORKFLOW_GUIDE.md  # Comprehensive documentation
+├── README-TDD-WORKFLOW.md      # TDD implementation guide
+└── WORKFLOW_EXECUTION_GUIDE.md # Execution-focused guide
+```
 
 ---
 
