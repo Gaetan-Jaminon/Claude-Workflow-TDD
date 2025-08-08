@@ -1,5 +1,13 @@
 # Claude Code TDD Workflow Memory
 
+## How to Use This Workflow
+**IMPORTANT**: This workflow is MANDATORY for ALL feature development and code changes:
+1. **Always apply** this workflow - it's not optional
+2. **Check** `.claude/commands/` directory for detailed command implementations
+3. **Detect** project language/framework from existing codebase
+4. **Apply** appropriate language-specific standards while following this workflow
+5. **Never** skip steps or make exceptions
+
 ## 🚨 MANDATORY TDD WORKFLOW - NO EXCEPTIONS 🚨
 
 ### Workflow Enforcement
@@ -12,7 +20,7 @@
 6. **IMPLEMENT-MINIMAL** → Write minimal code to pass tests (Green phase)
 7. **REFACTOR** → Improve code quality while keeping tests green
 8. **COMMIT & CREATE PR** → Feature branch, commit, push to remote
-9. **CLAUDE GITHUB REVIEW LOOP** → Iterative collaborative review with approval gates
+9. **CLAUDE GITHUB REVIEW LOOP** → Wait for automated Claude GitHub review, then present findings for user decision
 10. **MERGE** → User-approved merge to main branch
 
 **⛔ BREAKING THESE RULES = IMMEDIATE STOP**
@@ -35,6 +43,7 @@
 - **ALWAYS** work in iterative loop with Claude GitHub until no recommendations OR user rejects fixes
 
 ### Testing Standards
+**Note**: Detect project language from codebase and apply appropriate standards:
 - Test files MUST end with `_test.go` (Go projects) or appropriate extension for other languages
 - Use table-driven tests for multiple scenarios
 - Unit tests: In-memory storage only for fast feedback
@@ -45,8 +54,8 @@
 - Use `t.Run()` for subtests with descriptive names
 
 ### Available Commands
-The following workflow commands are available in `.claude/commands/`:
-- `/sync-with-main` - Synchronize with latest main branch
+**IMPORTANT**: Always check `.claude/commands/` directory for detailed implementations of these commands:
+- `/sync-with-main` - Synchronize with latest main branch (MANDATORY first step)
 - `/explore-feature` - Research phase without writing code
 - `/plan-feature` - Create implementation plan (triggers mandatory stop)
 - `/requirements-spec` - Define precise requirements with scope constraints
@@ -55,6 +64,8 @@ The following workflow commands are available in `.claude/commands/`:
 - `/implement-minimal` - Write minimal passing code (TDD Green phase)
 - `/commit-and-create-pr` - Automated Git workflow and PR creation
 - `/analyze-pr-feedback` - Process Claude GitHub review feedback
+
+**Note**: These commands contain the detailed implementation steps. Read the corresponding `.md` file in `.claude/commands/` when executing each command.
 
 ### Decision Points Requiring User Approval
 1. **After PLAN Phase**: "Should I proceed with this implementation plan?"
