@@ -32,7 +32,10 @@
       "WebFetch(domain:github.com)",
       "Bash(gh repo view:*)",
       "Bash(go run:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(zellij list-sessions:*)",
+      "Bash(echo:*)",
+      "Bash(./dev.sh)"
     ],
     "deny": []
   }

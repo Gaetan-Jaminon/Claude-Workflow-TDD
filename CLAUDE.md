@@ -103,6 +103,33 @@
 - **Error Handling**: Structured error types with context preservation
 - **API Design**: RESTful principles with proper HTTP status codes
 
+### Claude Code Guidelines - Lessons Learned
+**IMPORTANT**: These guidelines help Claude Code work more effectively on this project:
+
+#### Simplicity First
+- **Start Simple**: Always begin with the simplest solution that works
+- **Avoid Premature Complexity**: Don't add edge case handling until needed
+- **Check Existing Patterns**: Look for working examples (like aliases, existing scripts) before creating new solutions
+- **Test Incrementally**: Verify each step works before adding more complexity
+
+#### Development Environment Setup
+- **Zellij Sessions**: Keep layouts simple - just define panes and startup commands
+- **Script Creation**: Start with basic functionality, add features only when requested
+- **Session Management**: Don't overcomplicate with detection logic unless specifically needed
+- **Terminal Context**: Remember that interactive terminal apps need real terminal context
+
+#### Problem-Solving Approach
+- **Listen to User Feedback**: When user says "look at the logs" or "that's too complex", address their specific concern
+- **Focus on the Actual Problem**: Don't get distracted by peripheral issues
+- **Iterate Based on Feedback**: Adjust approach immediately when user indicates a different direction
+- **Recognize Working Solutions**: When something works, don't keep adding to it
+
+#### Common Anti-Patterns to Avoid
+- **Over-Engineering**: Adding session detection, cleanup scripts, complex error handling when not needed
+- **Missing Simple Solutions**: Creating complex scripts when a simple command would work
+- **Not Testing Assumptions**: Assuming commands work without verifying in the actual environment
+- **Ignoring Context**: Trying to run interactive terminal commands from non-terminal contexts
+
 ### Detailed Documentation
 - **Comprehensive Workflow Guide**: `.claude/COMPLETE_WORKFLOW_GUIDE.md`
 - **TDD Implementation Guide**: `.claude/README-TDD-WORKFLOW.md`

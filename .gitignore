@@ -8,3 +8,6 @@
 !.claude/**
 !.gitignore
 !debug.sh
+
+# Explicitly exclude logs directory (even though * excludes it)
+logs/
