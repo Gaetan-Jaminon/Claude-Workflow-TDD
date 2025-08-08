@@ -117,6 +117,21 @@
 - **Script Creation**: Start with basic functionality, add features only when requested
 - **Session Management**: Don't overcomplicate with detection logic unless specifically needed
 - **Terminal Context**: Remember that interactive terminal apps need real terminal context
+- **Zellij Configuration**: Complete working setup with:
+  - Config: `~/.config/zellij/config.kdl` - Ctrl+S scroll, Ctrl+Arrow resize, Ctrl+N unbound for nvim
+  - Layout: `~/.config/zellij/layouts/claude.kdl` - Multi-tab development environment
+  - Backup in Git: `infrastructure/zellij/` directory
+- **Zellij Layout Tabs**:
+  - **Code tab**: Claude AI (left), Editor with nvim+Neotree (right top), Shell (right bottom)
+  - **BTOP tab**: Full system monitoring
+  - **Go-Labs tab**: Billing API (left top), filtered btop for go- processes (left bottom), workspace (right)
+- **Dev Environment**: Use `./dev.sh` for simple session management or `zellij --layout claude` for full IDE
+- **Process Naming**: Use `exec -a go-[service-name]` pattern for service identification in monitoring tools
+- **Zellij Lessons Learned**:
+  - Complex nested layouts with percentages break scroll mode functionality
+  - Use simple pane structures without percentage-based sizing
+  - Tab bar only shows when multiple tabs exist
+  - Cannot nest Zellij sessions - environment prevents it
 
 #### Problem-Solving Approach
 - **Listen to User Feedback**: When user says "look at the logs" or "that's too complex", address their specific concern
@@ -129,6 +144,8 @@
 - **Missing Simple Solutions**: Creating complex scripts when a simple command would work
 - **Not Testing Assumptions**: Assuming commands work without verifying in the actual environment
 - **Ignoring Context**: Trying to run interactive terminal commands from non-terminal contexts
+- **Directory Confusion**: Always verify current working directory with `pwd` before file operations
+- **Git Repository Confusion**: Be aware of which repository you're in (root vs submodules)
 
 ### Detailed Documentation
 - **Comprehensive Workflow Guide**: `.claude/COMPLETE_WORKFLOW_GUIDE.md`

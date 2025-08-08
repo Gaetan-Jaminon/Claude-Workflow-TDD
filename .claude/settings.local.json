@@ -35,7 +35,9 @@
       "Bash(git pull:*)",
       "Bash(zellij list-sessions:*)",
       "Bash(echo:*)",
-      "Bash(./dev.sh)"
+      "Bash(./dev.sh)",
+      "Bash(sed:*)",
+      "Bash(go vet:*)"
     ],
     "deny": []
   }
