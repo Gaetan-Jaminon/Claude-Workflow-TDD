@@ -37,7 +37,23 @@
       "Bash(echo:*)",
       "Bash(./dev.sh)",
       "Bash(sed:*)",
-      "Bash(go vet:*)"
+      "Bash(go vet:*)",
+      "Bash(gh run list:*)",
+      "Bash(gofmt:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh run watch:*)",
+      "Bash(docker build:*)",
+      "Bash(podman build:*)",
+      "Bash(podman rm:*)",
+      "Bash(podman run:*)",
+      "Bash(podman logs:*)",
+      "Bash(podman stop:*)",
+      "Bash(BRANCH=\"feature/add-invoice\")",
+      "Bash(SAFE_BRANCH=$BRANCH//\\//-)",
+      "Bash(for BRANCH in \"feature/add-api\" \"fix/bug-123\" \"hotfix/critical-issue\" \"feature/very/deep/branch\")",
+      "Bash(do SAFE_BRANCH=$BRANCH//\\//-)",
+      "Bash(done)"
     ],
     "deny": []
   }
